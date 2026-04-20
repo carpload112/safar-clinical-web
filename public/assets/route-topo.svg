@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" fill="none">
+  
+  <g stroke="#C5E85C" stroke-width="0.5" opacity="0.22" fill="none">
+    <path d="M 0 30 Q 300 50 600 35 T 1200 40"></path>
+    <path d="M 0 60 Q 300 85 600 70 T 1200 75"></path>
+    <path d="M 0 95 Q 300 120 600 108 T 1200 110"></path>
+    <path d="M 0 130 Q 300 155 600 142 T 1200 148"></path>
+    <path d="M 0 165 Q 300 185 600 172 T 1200 180"></path>
+    <path d="M 0 200 Q 300 215 600 205 T 1200 210"></path>
+  </g>
+
+  
+  <path d="M 80 180 Q 240 60 380 140 Q 520 220 680 100 Q 820 20 960 150 Q 1080 240 1140 90" stroke="#C5E85C" stroke-width="1.25" fill="none" stroke-dasharray="0"></path>
+
+  
+  <path d="M 80 180 Q 240 60 380 140 Q 520 220 680 100 Q 820 20 960 150 Q 1080 240 1140 90" stroke="#C5E85C" stroke-width="3" fill="none" opacity="0.12"></path>
+
+  
+  <g>
+    <circle cx="80" cy="180" r="4" fill="#C5E85C"></circle>
+    <circle cx="380" cy="140" r="4" fill="#C5E85C"></circle>
+    <circle cx="680" cy="100" r="5" fill="#C5E85C"></circle>
+    <circle cx="960" cy="150" r="4" fill="#C5E85C"></circle>
+    <circle cx="1140" cy="90" r="6" fill="#C5E85C"></circle>
+    <circle cx="1140" cy="90" r="12" fill="none" stroke="#C5E85C" stroke-width="0.5" opacity="0.6"></circle>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C" opacity="0.7">
+    <text x="80" y="200">2023</text>
+    <text x="380" y="160">2024 Q1</text>
+    <text x="680" y="120">2024 Q4</text>
+    <text x="960" y="170">2025 Q3</text>
+    <text x="1100" y="110">2026 · HERE</text>
+  </g>
+</svg>

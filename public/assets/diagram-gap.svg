@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L8,5 L0,10 z" fill="#114A13"></path>
+    </marker>
+    <marker id="arrLight" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L8,5 L0,10 z" fill="#9BB89E"></path>
+    </marker>
+  </defs>
+
+  
+  <g stroke="#CDD6CE" stroke-width="0.5" stroke-dasharray="2 4" opacity="0.5">
+    <line x1="0" y1="110" x2="800" y2="110"></line>
+    <line x1="0" y1="220" x2="800" y2="220"></line>
+    <line x1="0" y1="330" x2="800" y2="330"></line>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#6B8270">
+    <text x="16" y="60">— 01 · SPONSOR</text>
+    <text x="16" y="170">— 02 · SITE</text>
+    <text x="16" y="280">— 03 · CHART</text>
+    <text x="16" y="390">— 04 · PATIENT</text>
+  </g>
+
+  
+  <g>
+    
+    <rect x="40" y="70" width="200" height="30" fill="none" stroke="#114A13" stroke-width="0.75"></rect>
+    <text x="52" y="90" font-family="JetBrains Mono, monospace" font-size="11" fill="#114A13">protocol_v4.2.pdf</text>
+
+    
+    <rect x="300" y="180" width="210" height="30" fill="none" stroke="#114A13" stroke-width="0.75"></rect>
+    <text x="312" y="200" font-family="JetBrains Mono, monospace" font-size="11" fill="#114A13">feasibility_estimate.xlsx</text>
+
+    
+    <rect x="560" y="290" width="200" height="30" fill="none" stroke="#114A13" stroke-width="0.75"></rect>
+    <text x="572" y="310" font-family="JetBrains Mono, monospace" font-size="11" fill="#114A13">MRN · 00481 · chart</text>
+
+    
+    <rect x="40" y="400" width="180" height="30" fill="none" stroke="#114A13" stroke-width="0.75"></rect>
+    <text x="52" y="420" font-family="JetBrains Mono, monospace" font-size="11" fill="#114A13">never heard about it</text>
+  </g>
+
+  
+  <g stroke="#114A13" stroke-width="0.75" fill="none">
+    
+    <path d="M 140 100 L 140 150 L 405 150 L 405 180" stroke-dasharray="4 4"></path>
+    <text x="150" y="140" font-family="JetBrains Mono, monospace" font-size="9" fill="#C3552A">gap · estimate</text>
+
+    
+    <path d="M 405 210 L 405 260 L 660 260 L 660 290" stroke-dasharray="4 4"></path>
+    <text x="430" y="252" font-family="JetBrains Mono, monospace" font-size="9" fill="#C3552A">gap · manual review</text>
+
+    
+    <path d="M 660 320 L 660 370 L 130 370 L 130 400" stroke-dasharray="4 4"></path>
+    <text x="420" y="363" font-family="JetBrains Mono, monospace" font-size="9" fill="#C3552A">gap · no routing</text>
+  </g>
+
+  
+  <g>
+    <rect x="40" y="10" width="720" height="20" fill="#114A13"></rect>
+    <text x="52" y="24" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5" fill="#C5E85C">— THE ROUTING LAYER · SAFAR CLINICAL</text>
+    <text x="720" y="24" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#C5E85C">AUDITED</text>
+  </g>
+</svg>

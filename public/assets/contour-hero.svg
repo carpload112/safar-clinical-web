@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <g stroke="#114A13" stroke-width="0.5" opacity="0.16" fill="none">
+    <path d="M 0 120 Q 400 80 800 130 T 1600 100"></path>
+    <path d="M 0 170 Q 400 135 800 180 T 1600 155"></path>
+    <path d="M 0 220 Q 400 190 800 230 T 1600 210"></path>
+    <path d="M 0 270 Q 400 245 800 280 T 1600 265"></path>
+    <path d="M 0 320 Q 400 300 800 330 T 1600 320"></path>
+    <path d="M 0 370 Q 400 355 800 380 T 1600 375"></path>
+    <path d="M 0 420 Q 400 410 800 430 T 1600 430"></path>
+    <path d="M 0 470 Q 400 465 800 480 T 1600 485"></path>
+    <path d="M 0 520 Q 400 520 800 530 T 1600 540"></path>
+    <path d="M 0 570 Q 400 575 800 580 T 1600 595"></path>
+    <path d="M 0 620 Q 400 630 800 630 T 1600 650"></path>
+  </g>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" fill="#114A13" opacity="0.4" letter-spacing="1.2">
+    <text x="1560" y="122" text-anchor="end">— 1200</text>
+    <text x="1560" y="272" text-anchor="end">— 900</text>
+    <text x="1560" y="422" text-anchor="end">— 600</text>
+    <text x="1560" y="572" text-anchor="end">— 300</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#114A13" opacity="0.18">
+    <text x="30" y="40">— LEDGER · AUDITED TRAIL</text>
+    <text x="30" y="70">2026-04-12T09:14:22Z · match.created · mrn 00481 · study S-4118</text>
+    <text x="30" y="92">2026-04-12T09:14:23Z · consent.requested · coord jr@site</text>
+    <text x="30" y="114">2026-04-12T09:18:47Z · consent.granted · signature sha256:e7a…</text>
+    <text x="30" y="136">2026-04-12T09:19:02Z · pi.notified · mrn 00481 · channel epic-inbox</text>
+    <text x="30" y="158">2026-04-12T09:22:15Z · screen.scheduled · 2026-04-14 · labs ordered</text>
+    <text x="30" y="180">— ledger verified · no gaps · 5 events · chain hash 9f0a…bc82</text>
+
+    <text x="30" y="230">— LEDGER · AUDITED TRAIL</text>
+    <text x="30" y="260">2026-04-12T10:02:44Z · protocol.loaded · v4.2 · sponsor S-2019</text>
+    <text x="30" y="282">2026-04-12T10:02:45Z · cohort.indexed · candidates 184</text>
+    <text x="30" y="304">2026-04-12T10:02:47Z · eligibility.applied · pass 42 · fail 142</text>
+    <text x="30" y="326">2026-04-12T10:02:48Z · review.queued · coordinator rs@site</text>
+
+    <text x="30" y="380">— LEDGER · AUDITED TRAIL</text>
+    <text x="30" y="410">2026-04-12T11:48:10Z · enrollment.confirmed · 22/40 · on target</text>
+    <text x="30" y="432">2026-04-12T11:48:12Z · site.metric.updated · screen-fail 0.18</text>
+    <text x="30" y="454">2026-04-12T11:48:13Z · sponsor.report.emitted · weekly</text>
+
+    <text x="30" y="510">— LEDGER · AUDITED TRAIL</text>
+    <text x="30" y="540">2026-04-12T14:11:02Z · amendment.received · v4.3 · criteria δ</text>
+    <text x="30" y="562">2026-04-12T14:11:05Z · cohort.rescored · 184→171 · -13 on criterion 3.2</text>
+    <text x="30" y="584">2026-04-12T14:11:06Z · coordinator.alerted · diff applied</text>
+
+    <text x="30" y="640">— LEDGER · AUDITED TRAIL</text>
+    <text x="30" y="670">2026-04-12T16:00:00Z · session.closed · reviewer rs@site</text>
+    <text x="30" y="692">2026-04-12T16:00:01Z · ledger.sealed · block 00482</text>
+    <text x="30" y="714">2026-04-12T16:00:02Z · receipt.emitted · hash 2c71…9aa0</text>
+  </g>
+</svg>
