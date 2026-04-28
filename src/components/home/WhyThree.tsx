@@ -36,7 +36,7 @@ export default function WhyThree() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', paddingBottom: 28, borderBottom: '0.5px solid var(--border)', gap: 16, flexWrap: 'wrap' }}>
         <span className="sf-eyebrow" style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--fg-3)' }}>— WHY SAFAR</span>
         <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 22, letterSpacing: '-0.025em', color: 'var(--forest)' }}>
-          Three pillars. One reading of the record.
+          Full patient management platform. Identification, enrollment, and management.
         </span>
       </div>
       <div

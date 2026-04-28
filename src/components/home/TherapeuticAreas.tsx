@@ -1,16 +1,16 @@
-const areas: Array<[string, string, string]> = [
-  ['Oncology', '14 studies · 312 sites', '◉'],
-  ['Cardiology', '6 studies · 148 sites', '♡'],
-  ['Rare disease', '11 studies · 84 sites', '✦'],
-  ['Hematology', '4 studies · 62 sites', '◆'],
-  ['Neurology · CNS', '5 studies · 91 sites', '◎'],
-  ['Immunology', '7 studies · 104 sites', '⬡'],
-  ['Endocrinology', '3 studies · 58 sites', '◈'],
-  ['Dermatology', '2 studies · 44 sites', '△'],
-  ['Nephrology', '3 studies · 39 sites', '◐'],
-  ['Infectious dis.', '4 studies · 72 sites', '✧'],
-  ['Mental health', '2 studies · 31 sites', '◇'],
-  ['Respiratory', '3 studies · 48 sites', '◍'],
+const areas: Array<[string, string]> = [
+  ['Oncology', '◉'],
+  ['Cardiology', '♡'],
+  ['Rare disease', '✦'],
+  ['Hematology', '◆'],
+  ['Neurology · CNS', '◎'],
+  ['Immunology', '⬡'],
+  ['Endocrinology', '◈'],
+  ['Dermatology', '△'],
+  ['Nephrology', '◐'],
+  ['Infectious dis.', '✧'],
+  ['Mental health', '◇'],
+  ['Respiratory', '◍'],
 ]
 
 export default function TherapeuticAreas() {
@@ -96,10 +96,9 @@ export default function TherapeuticAreas() {
               minHeight: 160,
             }}
           >
-            <span style={{ fontSize: 28, color: 'var(--brand)', opacity: 0.7, fontFamily: 'var(--font-display)' }}>{a[2]}</span>
+            <span style={{ fontSize: 28, color: 'var(--brand)', opacity: 0.7, fontFamily: 'var(--font-display)' }}>{a[1]}</span>
             <div style={{ marginTop: 'auto' }}>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 20, letterSpacing: '-0.025em', lineHeight: 1.15, color: 'var(--forest)' }}>{a[0]}</div>
-              <div style={{ marginTop: 6, fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', color: 'var(--fg-3)', textTransform: 'uppercase' }}>— {a[1]}</div>
             </div>
           </a>
         ))}

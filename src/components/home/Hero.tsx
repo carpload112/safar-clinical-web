@@ -5,7 +5,7 @@ import { useOpenCta } from '../CtaContext'
 export default function Hero() {
   const openCta = useOpenCta()
   return (
-    <section style={{ padding: '80px 32px 96px', borderBottom: '0.5px solid var(--border)', position: 'relative', overflow: 'hidden', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+    <section style={{ padding: '80px 32px 56px', borderTop: '0.5px solid var(--border)', borderBottom: '0.5px solid var(--border)', borderLeft: '0.5px solid var(--border)', borderRight: '0.5px solid var(--border)', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
       <style>{`
         @keyframes compassDrift {
           0%,100% { transform: rotate(0deg) scale(1); }
@@ -38,35 +38,27 @@ export default function Hero() {
       <div style={{ position: 'relative', width: '100%' }}>
         {/* Meta bar */}
         <div className="hero-meta" style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 48, flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: 'var(--brand)', boxShadow: '0 0 0 2px rgba(90,157,41,0.25)' }}/>
-            <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', color: 'var(--fg-3)' }}>LIVE · 312 SITES · 28 HEALTH SYSTEMS</span>
-          </div>
-          <span style={{ width: 1, height: 14, background: 'var(--border)', display: 'inline-block' }}/>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', color: 'var(--fg-3)' }}>HIPAA · SOC 2 · 21 CFR PART 11</span>
         </div>
 
         {/* 2-col grid */}
-        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 72, alignItems: 'start' }}>
-          <div>
+        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: 16, alignItems: 'stretch' }}>
+          <div className="hero-left" style={{ display: 'flex', flexDirection: 'column' }}>
             <h1
               className="hero-h1"
               style={{
                 fontFamily: 'var(--font-display)', fontWeight: 400,
-                fontSize: 'clamp(52px,7.5vw,108px)',
+                fontSize: 'clamp(48px,6.6vw,96px)',
                 letterSpacing: '-0.045em', lineHeight: 0.95,
                 color: 'var(--forest)',
               }}
             >
-              The patients<br/>already exist.<br/>We just find<br/><span style={{ fontStyle: 'italic', color: 'var(--brand)' }}>them first.</span>
+              The patients<br/>already exist.<br/><span style={{ fontStyle: 'italic', color: 'var(--brand)' }}>Safar finds them.</span>
             </h1>
-          </div>
-
-          <div className="hero-aside" style={{ paddingTop: 8 }}>
-            <p style={{ fontSize: 16, lineHeight: 1.6, color: 'var(--fg-2)', maxWidth: '38ch' }}>
-              Safar reads Epic, Cerner and FHIR endpoints to surface trial-eligible patients at the moment of clinical decision — before they leave the system, before they miss the window.
+            <p className="hero-aside" style={{ marginTop: 40, fontSize: 16, lineHeight: 1.6, color: 'var(--fg-2)', maxWidth: '46ch' }}>
+              Safar acts as the data layer and intermediary between an EHR and an EDC/CTMS. We read Epic, Cerner, and FHIR endpoints to surface trial-eligible patients at the moment of clinical — before they leave the system, before they miss the window.
             </p>
-            <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'flex-start' }}>
+            <div className="hero-aside" style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'flex-start' }}>
               <button
                 onClick={openCta}
                 style={{
@@ -91,41 +83,25 @@ export default function Hero() {
                 Read the method ↗
               </a>
             </div>
+          </div>
 
-            {/* Patient portrait */}
-            <figure className="hero-aside" style={{ margin: '40px 0 0', display: 'flex', gap: 16, alignItems: 'center', paddingTop: 24, borderTop: '0.5px solid var(--border)' }}>
-              <div style={{ width: 88, height: 88, position: 'relative', flexShrink: 0, border: '0.5px solid var(--border)', overflow: 'hidden', borderRadius: '50%' }}>
+          {/* Patient images — triangle of three, left-aligned so the compass shows on the right */}
+          <div className="hero-portraits hero-aside" style={{ alignSelf: 'center', justifySelf: 'start', width: '70%', marginLeft: -8, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gridTemplateRows: 'auto auto', gap: 18 }}>
+            {[
+              { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1600&q=90&dpr=2', alt: 'A patient, smiling',         col: '2 / span 2', row: 1 },
+              { src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1600&q=90&dpr=2', alt: 'A patient, at ease',         col: '1 / span 2', row: 2 },
+              { src: 'https://plus.unsplash.com/premium_photo-1681884400104-84e5a13e73d1?fm=jpg&fit=crop&w=2400&q=95&dpr=2', alt: 'A daughter hugging her senior father', col: '3 / span 2', row: 2 },
+            ].map(p => (
+              <div key={p.src} style={{ gridColumn: p.col, gridRow: p.row, width: '100%', paddingTop: '100%', position: 'relative', overflow: 'hidden', borderRadius: '50%' }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=70"
-                  alt="A patient at the moment of clinical decision"
+                  src={p.src}
+                  alt={p.alt}
                   fill
-                  sizes="88px"
+                  sizes="(max-width:860px) 40vw, 220px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <figcaption>
-                <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 18, letterSpacing: '-0.02em', color: 'var(--forest)', lineHeight: 1.15 }}>
-                  Behind every match, a person.
-                </div>
-                <div style={{ marginTop: 6, fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.16em', color: 'var(--fg-3)', textTransform: 'uppercase' }}>
-                  — ILLUSTRATIVE · PATIENT JOURNEY
-                </div>
-              </figcaption>
-            </figure>
-
-            {/* Mini stats */}
-            <div className="hero-stats" style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, borderTop: '0.5px solid var(--border)', paddingTop: 20 }}>
-              {[
-                ['37.2%', 'match rate'],
-                ['9 wk', 'to LPI'],
-                ['312', 'sites'],
-              ].map(([val, label], i) => (
-                <div key={label} style={{ paddingRight: 16, borderRight: i < 2 ? '0.5px solid var(--border)' : 'none', paddingLeft: i > 0 ? 16 : 0 }}>
-                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 28, letterSpacing: '-0.04em', color: 'var(--brand)', lineHeight: 1 }}>{val}</div>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.14em', color: 'var(--fg-3)', marginTop: 4 }}>{label}</div>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </div>

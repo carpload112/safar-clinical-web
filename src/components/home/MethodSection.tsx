@@ -14,6 +14,11 @@ const steps = [
     title: 'Route',
     detail: 'A match surfaces as a single row inside the treating clinician\'s existing chart view. No new portal. No separate login. The right patient, in front of the right team, at the moment the decision is live.',
   },
+  {
+    num: '04',
+    title: 'Manage',
+    detail: 'Once a patient consents, Safar handles the conversation — appointment reminders, pre-visit prep, follow-up check-ins, and status updates over secure SMS and email. Coordinators stay in the loop within the platform; patients get a steady, human cadence instead of voicemails and missed calls.',
+  },
 ]
 
 export default function MethodSection() {

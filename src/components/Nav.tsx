@@ -78,8 +78,6 @@ const menus: Record<MenuKey, {
   },
 }
 
-const megaKeys = Object.keys(menus) as MenuKey[]
-
 export default function Nav() {
   const openCta = useOpenCta()
   const [scrolled, setScrolled] = useState(false)
@@ -153,7 +151,7 @@ export default function Nav() {
 
           {/* Desktop nav */}
           <div className="nav-desktop" style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-            {megaKeys.map(key => (
+            {(['Method','For sponsors','For sites'] as MenuKey[]).map(key => (
               <div
                 key={key}
                 onMouseEnter={() => handleEnter(key)}
@@ -172,6 +170,23 @@ export default function Nav() {
                 </button>
               </div>
             ))}
+            <Link href="/for-physicians" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>For physicians</Link>
+            <div
+              onMouseEnter={() => handleEnter('Studies')}
+              onMouseLeave={handleLeave}
+              style={{ position: 'relative' }}
+            >
+              <button
+                style={{
+                  background: 'none', border: 0, padding: '4px 0',
+                  fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--forest)',
+                  cursor: 'pointer', letterSpacing: '0.01em',
+                }}
+                aria-expanded={activeMenu === 'Studies'}
+              >
+                Studies
+              </button>
+            </div>
             <Link href="/security" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>Security</Link>
             <Link href="/dispatch" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>Dispatch</Link>
           </div>
@@ -289,10 +304,18 @@ export default function Nav() {
           overflowY: 'auto',
         }}>
           <div style={{ padding: '32px 32px 48px' }}>
-            {[...megaKeys, 'Security', 'Dispatch'].map(label => (
+            {[
+              { label: 'Method', href: '/method' },
+              { label: 'For sponsors', href: '/for-sponsors' },
+              { label: 'For sites', href: '/for-sites' },
+              { label: 'For physicians', href: '/for-physicians' },
+              { label: 'Studies', href: '/studies' },
+              { label: 'Security', href: '/security' },
+              { label: 'Dispatch', href: '/dispatch' },
+            ].map(item => (
               <Link
-                key={label}
-                href={label === 'Security' ? '/security' : label === 'Dispatch' ? '/dispatch' : `/${label.toLowerCase().replace(' ', '-')}`}
+                key={item.label}
+                href={item.href}
                 onClick={() => setMobileOpen(false)}
                 style={{
                   display: 'block', padding: '14px 0',
@@ -301,7 +324,7 @@ export default function Nav() {
                   letterSpacing: '-0.03em', color: 'var(--forest)', textDecoration: 'none',
                 }}
               >
-                {label}
+                {item.label}
               </Link>
             ))}
             <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 16 }}>
