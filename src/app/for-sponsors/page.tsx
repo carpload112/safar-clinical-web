@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import PageShell from '@/components/PageShell'
 import PageHeader from '@/components/PageHeader'
 import CtaBand from '@/components/CtaBand'
@@ -61,6 +62,20 @@ export default function ForSponsorsPage() {
           <div>
             <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--fg-3)' }}>— CASE · PHASE II AML RESCUE</span>
             <div style={{ marginTop:20, fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.12em', color:'var(--brand)' }}>SPONSOR · TOP‑10 PHARMA · CONFIDENTIAL</div>
+            <figure style={{ margin:'32px 0 0' }}>
+              <div style={{ width:'100%', paddingTop:'120%', position:'relative', border:'0.5px solid var(--border)', overflow:'hidden' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=70"
+                  alt="A patient enrolled through a Safar match"
+                  fill
+                  sizes="(max-width:860px) 100vw, 30vw"
+                  style={{ objectFit:'cover' }}
+                />
+              </div>
+              <figcaption style={{ marginTop:14, fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--fg-3)', textTransform:'uppercase', lineHeight:1.6 }}>
+                — ILLUSTRATIVE · PATIENT JOURNEY<br/>· ONE OF 106 MATCHES SURFACED
+              </figcaption>
+            </figure>
           </div>
           <div>
             <h3 style={{ fontFamily:'var(--font-display)', fontWeight:400, fontSize:'clamp(36px,4vw,48px)', letterSpacing:'-0.035em', lineHeight:1.0, color:'var(--forest)' }}>

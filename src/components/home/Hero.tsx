@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useOpenCta } from '../CtaContext'
 
 export default function Hero() {
@@ -91,8 +92,29 @@ export default function Hero() {
               </a>
             </div>
 
+            {/* Patient portrait */}
+            <figure className="hero-aside" style={{ margin: '40px 0 0', display: 'flex', gap: 16, alignItems: 'center', paddingTop: 24, borderTop: '0.5px solid var(--border)' }}>
+              <div style={{ width: 88, height: 88, position: 'relative', flexShrink: 0, border: '0.5px solid var(--border)', overflow: 'hidden', borderRadius: '50%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=70"
+                  alt="A patient at the moment of clinical decision"
+                  fill
+                  sizes="88px"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <figcaption>
+                <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 18, letterSpacing: '-0.02em', color: 'var(--forest)', lineHeight: 1.15 }}>
+                  Behind every match, a person.
+                </div>
+                <div style={{ marginTop: 6, fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.16em', color: 'var(--fg-3)', textTransform: 'uppercase' }}>
+                  — ILLUSTRATIVE · PATIENT JOURNEY
+                </div>
+              </figcaption>
+            </figure>
+
             {/* Mini stats */}
-            <div className="hero-stats" style={{ marginTop: 48, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, borderTop: '0.5px solid var(--border)', paddingTop: 20 }}>
+            <div className="hero-stats" style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, borderTop: '0.5px solid var(--border)', paddingTop: 20 }}>
               {[
                 ['37.2%', 'match rate'],
                 ['9 wk', 'to LPI'],

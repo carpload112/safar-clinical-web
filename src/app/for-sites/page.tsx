@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import PageShell from '@/components/PageShell'
 import PageHeader from '@/components/PageHeader'
 import CtaBand from '@/components/CtaBand'
@@ -57,13 +58,34 @@ export default function ForSitesPage() {
       <section style={{ padding:'96px 32px', borderBottom:'0.5px solid var(--border)', background:'var(--forest)', color:'var(--cream)', position:'relative', overflow:'hidden' }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/assets/compass-rose.svg" alt="" aria-hidden style={{ position:'absolute', right:-180, top:-200, width:560, height:560, opacity:0.06, filter:'brightness(2.5)', pointerEvents:'none' }}/>
-        <div style={{ position:'relative', maxWidth:900 }}>
-          <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--lime)' }}>— FROM THE FIELD</span>
-          <blockquote style={{ margin:'28px 0 0', fontFamily:'var(--font-display)', fontWeight:400, fontStyle:'italic', fontSize:'clamp(32px,4vw,56px)', letterSpacing:'-0.03em', lineHeight:1.1, color:'var(--cream)' }}>
-            "It's the first research tool that didn't ask my clinic to change. The match was there when I opened the chart. I said yes. The patient was enrolled by Friday."
-          </blockquote>
-          <div style={{ marginTop:32, fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.14em', color:'var(--sage-soft)' }}>
-            — DR. AMINA OKONKWO · PI · HEMATOLOGY · DANA‑FARBER
+        <style>{`
+          @media(max-width:860px){
+            .fs-quote-grid{grid-template-columns:1fr!important;gap:40px!important}
+          }
+        `}</style>
+        <div className="fs-quote-grid" style={{ position:'relative', display:'grid', gridTemplateColumns:'0.7fr 1.6fr', gap:56, alignItems:'center' }}>
+          <figure style={{ margin:0 }}>
+            <div style={{ width:'100%', paddingTop:'120%', position:'relative', border:'0.5px solid rgba(241,239,232,0.2)', overflow:'hidden' }}>
+              <Image
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=70"
+                alt="A patient enrolled through a Safar match"
+                fill
+                sizes="(max-width:860px) 100vw, 25vw"
+                style={{ objectFit:'cover' }}
+              />
+            </div>
+            <figcaption style={{ marginTop:14, fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--sage-soft)', textTransform:'uppercase', lineHeight:1.6 }}>
+              — THE PATIENT · ENROLLED BY FRIDAY<br/>· ILLUSTRATIVE
+            </figcaption>
+          </figure>
+          <div>
+            <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--lime)' }}>— FROM THE FIELD</span>
+            <blockquote style={{ margin:'28px 0 0', fontFamily:'var(--font-display)', fontWeight:400, fontStyle:'italic', fontSize:'clamp(32px,4vw,56px)', letterSpacing:'-0.03em', lineHeight:1.1, color:'var(--cream)' }}>
+              "It's the first research tool that didn't ask my clinic to change. The match was there when I opened the chart. I said yes. The patient was enrolled by Friday."
+            </blockquote>
+            <div style={{ marginTop:32, fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.14em', color:'var(--sage-soft)' }}>
+              — DR. AMINA OKONKWO · PI · HEMATOLOGY · DANA‑FARBER
+            </div>
           </div>
         </div>
       </section>
