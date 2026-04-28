@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"></stop>
+      <stop offset="55%" stop-color="#114A13"></stop>
+      <stop offset="100%" stop-color="#0A3A0C"></stop>
+    </linearGradient>
+    <radialGradient id="pglight" cx="0.32" cy="0.28" r="0.7">
+      <stop offset="0%" stop-color="#C5E85C" stop-opacity="0.18"></stop>
+      <stop offset="60%" stop-color="#C5E85C" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="400" fill="url(#pg)"></rect>
+  <rect width="320" height="400" fill="url(#pglight)"></rect>
+  
+  <g stroke="#C5E85C" stroke-width="0.4" opacity="0.10" fill="none">
+    <path d="M 0 90 Q 80 110 160 95 T 320 105"></path>
+    <path d="M 0 140 Q 80 160 160 145 T 320 155"></path>
+    <path d="M 0 200 Q 80 220 160 205 T 320 215"></path>
+    <path d="M 0 260 Q 80 280 160 265 T 320 275"></path>
+    <path d="M 0 320 Q 80 340 160 325 T 320 335"></path>
+  </g>
+  
+  <g opacity="0.55">
+    <circle cx="160" cy="155" r="58" fill="#0A3A0C"></circle>
+    <path d="M 56 400 Q 56 270 160 270 Q 264 270 264 400 Z" fill="#0A3A0C"></path>
+  </g>
+  
+  <path d="M 102 145 Q 130 95 160 95" stroke="#C5E85C" stroke-width="0.6" fill="none" opacity="0.35"></path>
+  <path d="M 80 280 Q 110 250 160 250" stroke="#C5E85C" stroke-width="0.5" fill="none" opacity="0.25"></path>
+</svg>

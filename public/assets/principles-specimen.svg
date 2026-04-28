@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ps-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#114A13"></stop>
+      <stop offset="100%" stop-color="#0A3A0C"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="760" fill="url(#ps-bg)"></rect>
+
+  
+  <g stroke="#C5E85C" stroke-width="0.5" opacity="0.18">
+    <line x1="40" y1="0" x2="40" y2="760"></line>
+    <line x1="560" y1="0" x2="560" y2="760"></line>
+    <line x1="0" y1="44" x2="600" y2="44"></line>
+    <line x1="0" y1="716" x2="600" y2="716"></line>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.6" fill="#8AA87E">
+    <text x="40" y="30">— FIG. 02 · ROUTING MODEL</text>
+    <text x="560" y="30" text-anchor="end">SCALE 1:1</text>
+    <text x="40" y="740">— DECLINATION 42°N</text>
+    <text x="560" y="740" text-anchor="end">BEARING 287°</text>
+  </g>
+
+  
+  <g stroke="#C5E85C" stroke-width="0.6" opacity="0.4" fill="none">
+    <line x1="120" y1="120" x2="120" y2="660"></line>
+    <line x1="300" y1="120" x2="300" y2="660"></line>
+    <line x1="480" y1="120" x2="480" y2="660"></line>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">
+    <text x="120" y="100" text-anchor="middle">— SPONSOR</text>
+    <text x="300" y="100" text-anchor="middle">— SAFAR</text>
+    <text x="480" y="100" text-anchor="middle">— SITE</text>
+  </g>
+  <g stroke="#C5E85C" stroke-width="0.5" opacity="0.5">
+    <line x1="80" y1="108" x2="160" y2="108"></line>
+    <line x1="260" y1="108" x2="340" y2="108"></line>
+    <line x1="440" y1="108" x2="520" y2="108"></line>
+  </g>
+
+  
+  <g>
+    <rect x="80" y="140" width="80" height="40" rx="2" fill="#0A3A0C" stroke="#C5E85C" stroke-width="0.6"></rect>
+    <text x="120" y="165" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">PROTOCOL</text>
+    <path d="M 160 160 L 260 160" stroke="#C5E85C" stroke-width="0.6" marker-end="url(#arr)"></path>
+    <rect x="260" y="140" width="80" height="40" rx="2" fill="#114A13" stroke="#C5E85C" stroke-width="0.8"></rect>
+    <text x="300" y="165" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">PARSE · INDEX</text>
+  </g>
+
+  
+  <g>
+    <rect x="260" y="220" width="80" height="40" rx="2" fill="#114A13" stroke="#C5E85C" stroke-width="0.8"></rect>
+    <text x="300" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">FEASIBILITY</text>
+    <path d="M 340 240 L 440 240" stroke="#C5E85C" stroke-width="0.6"></path>
+    <rect x="440" y="220" width="80" height="40" rx="2" fill="#0A3A0C" stroke="#C5E85C" stroke-width="0.6"></rect>
+    <text x="480" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">SITE EHR</text>
+  </g>
+
+  
+  <g>
+    <rect x="440" y="300" width="80" height="40" rx="2" fill="#0A3A0C" stroke="#C5E85C" stroke-width="0.6"></rect>
+    <text x="480" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">CHART</text>
+    <path d="M 440 320 L 340 320" stroke="#C5E85C" stroke-width="0.6"></path>
+    <rect x="260" y="300" width="80" height="40" rx="2" fill="#114A13" stroke="#C5E85C" stroke-width="0.8"></rect>
+    <text x="300" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">MATCH · ROUTE</text>
+  </g>
+
+  
+  <g>
+    <path d="M 340 320 L 340 400 L 440 400" stroke="#C5E85C" stroke-width="0.6" fill="none"></path>
+    <rect x="440" y="380" width="80" height="40" rx="2" fill="#0A3A0C" stroke="#C5E85C" stroke-width="0.6"></rect>
+    <text x="480" y="405" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#C5E85C">PI REVIEW</text>
+  </g>
+
+  
+  <g>
+    <rect x="440" y="460" width="80" height="40" rx="2" fill="#C3552A" stroke="#C3552A" stroke-width="0.8"></rect>
+    <text x="480" y="478" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#FAF6E7">PATIENT</text>
+    <text x="480" y="492" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#FAF6E7">CONSENT</text>
+  </g>
+
+  
+  <g>
+    <rect x="60" y="560" width="480" height="80" fill="#0A3A0C" stroke="#C5E85C" stroke-width="0.5" opacity="0.9"></rect>
+    <text x="80" y="582" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.6" fill="#C5E85C">— THE LEDGER · APPEND-ONLY · CRYPTOGRAPHICALLY SIGNED</text>
+    <g font-family="JetBrains Mono, monospace" font-size="8.5" letter-spacing="1.2" fill="#8AA87E">
+      <text x="80" y="606">2026-04-28 14:02:11Z · MATCH-ROUTED · NCT05783438 · 0x4c8a...</text>
+      <text x="80" y="622">2026-04-28 14:04:09Z · CONSENT-SIGNED · MRN-HASH 0x9f12... · ✓</text>
+    </g>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#8AA87E">
+    <text x="40" y="678">— MEAN LATENCY · 4.2s</text>
+    <text x="300" y="678" text-anchor="middle">P95 · 11s</text>
+    <text x="560" y="678" text-anchor="end">UPTIME · 99.97%</text>
+  </g>
+</svg>

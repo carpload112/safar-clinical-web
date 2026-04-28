@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="s2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAE7DD"></stop>
+      <stop offset="100%" stop-color="#DFDBCC"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#s2bg)"></rect>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="0.6" fill="#114A13">
+    <text x="32" y="44" font-size="9" letter-spacing="1.4" fill="#6B7868">— LEDGER · 2026-04-28 · 14:32 UTC</text>
+    <line x1="32" y1="60" x2="568" y2="60" stroke="#114A13" stroke-opacity="0.2" stroke-width="0.5"></line>
+    <text x="32" y="92">14:32:01</text><text x="130" y="92">match.scored</text><text x="320" y="92" fill="#5A9D29">MRN·00481</text><text x="500" y="92" font-size="9" fill="#6B7868">+0.91</text>
+    <text x="32" y="120">14:32:08</text><text x="130" y="120">pi.notified</text><text x="320" y="120" fill="#5A9D29">dr.k.patel</text><text x="500" y="120" font-size="9" fill="#6B7868">ok</text>
+    <text x="32" y="148">14:33:42</text><text x="130" y="148">consent.requested</text><text x="320" y="148" fill="#5A9D29">portal·1</text><text x="500" y="148" font-size="9" fill="#6B7868">sent</text>
+    <text x="32" y="176">14:51:09</text><text x="130" y="176">consent.signed</text><text x="320" y="176" fill="#5A9D29">sha·a3f9c</text><text x="500" y="176" font-size="9" fill="#63A426">verified</text>
+    <text x="32" y="204">14:51:11</text><text x="130" y="204">enrollment.draft</text><text x="320" y="204" fill="#5A9D29">study·OAK-23</text><text x="500" y="204" font-size="9" fill="#6B7868">queued</text>
+    <text x="32" y="232">14:58:30</text><text x="130" y="232">visit.scheduled</text><text x="320" y="232" fill="#5A9D29">2026-05-04</text><text x="500" y="232" font-size="9" fill="#6B7868">10:00</text>
+    <text x="32" y="260">15:02:11</text><text x="130" y="260">match.scored</text><text x="320" y="260" fill="#5A9D29">MRN·00482</text><text x="500" y="260" font-size="9" fill="#6B7868">+0.84</text>
+    <text x="32" y="288">15:02:18</text><text x="130" y="288">pi.notified</text><text x="320" y="288" fill="#5A9D29">dr.r.osei</text><text x="500" y="288" font-size="9" fill="#6B7868">ok</text>
+    <text x="32" y="316">15:14:01</text><text x="130" y="316">amendment.applied</text><text x="320" y="316" fill="#5A9D29">v4.2 → v4.3</text><text x="500" y="316" font-size="9" fill="#E8B95C">rescore</text>
+    <text x="32" y="344">15:14:04</text><text x="130" y="344">cohort.rescored</text><text x="320" y="344" fill="#5A9D29">n=42</text><text x="500" y="344" font-size="9" fill="#63A426">done</text>
+    <line x1="32" y1="362" x2="568" y2="362" stroke="#114A13" stroke-opacity="0.2" stroke-width="0.5"></line>
+    <text x="32" y="382" font-size="9" letter-spacing="1.4" fill="#6B7868">— TAIL · 10 OF 14,829 EVENTS · IMMUTABLE</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="s1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F3F12"></stop>
+      <stop offset="100%" stop-color="#114A13"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#s1bg)"></rect>
+  
+  <g stroke="#C5E85C" stroke-width="0.4" opacity="0.18">
+    <line x1="0" y1="80" x2="600" y2="80"></line>
+    <line x1="0" y1="160" x2="600" y2="160"></line>
+    <line x1="0" y1="240" x2="600" y2="240"></line>
+    <line x1="0" y1="320" x2="600" y2="320"></line>
+    <line x1="100" y1="0" x2="100" y2="400"></line>
+    <line x1="200" y1="0" x2="200" y2="400"></line>
+    <line x1="300" y1="0" x2="300" y2="400"></line>
+    <line x1="400" y1="0" x2="400" y2="400"></line>
+    <line x1="500" y1="0" x2="500" y2="400"></line>
+  </g>
+  
+  <path d="M 40 320 Q 140 260 220 240 Q 300 220 360 180 Q 420 140 520 110" stroke="#C5E85C" stroke-width="1.5" fill="none"></path>
+  <path d="M 40 320 Q 140 260 220 240 Q 300 220 360 180 Q 420 140 520 110" stroke="#C5E85C" stroke-width="6" opacity="0.15" fill="none"></path>
+  
+  <circle cx="40" cy="320" r="4" fill="#C5E85C"></circle>
+  <circle cx="220" cy="240" r="4" fill="#C5E85C"></circle>
+  <circle cx="360" cy="180" r="5" fill="#C5E85C"></circle>
+  <circle cx="520" cy="110" r="6" fill="#C5E85C"></circle>
+  <circle cx="520" cy="110" r="14" fill="none" stroke="#C5E85C" stroke-width="0.6" opacity="0.6"></circle>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#C5E85C" opacity="0.7">
+    <text x="40" y="345">— PROTOCOL</text>
+    <text x="220" y="265">— FEASIBILITY</text>
+    <text x="360" y="205">— CHART</text>
+    <text x="500" y="135" text-anchor="end">— MATCH</text>
+  </g>
+  <text x="20" y="30" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#8AA87E">— FIG. EX1 · ROUTING PATH (LIVE)</text>
+</svg>

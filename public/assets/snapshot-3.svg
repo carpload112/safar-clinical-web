@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="s3bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9D29"></stop>
+      <stop offset="100%" stop-color="#114A13"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#s3bg)"></rect>
+  
+  <text x="40" y="50" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.4" fill="#C5E85C" opacity="0.9">— 2026 · CUMULATIVE</text>
+  <text x="40" y="220" font-family="Fraunces, serif" font-size="180" font-weight="400" letter-spacing="-8" fill="#F1EFE8">14k</text>
+  <text x="40" y="260" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#C5E85C" letter-spacing="-1">matches routed</text>
+  <line x1="40" y1="290" x2="560" y2="290" stroke="#F1EFE8" stroke-opacity="0.2" stroke-width="0.5"></line>
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2" fill="#F1EFE8">
+    <text x="40" y="320">— 4,209 ENROLLED</text>
+    <text x="40" y="345" opacity="0.7">— 38 SITES · 12 SPONSORS</text>
+    <text x="40" y="370" opacity="0.5">— 9 THERAPEUTIC AREAS</text>
+  </g>
+  
+  <g transform="translate(490 110)" opacity="0.5">
+    <circle r="60" fill="none" stroke="#F1EFE8" stroke-width="0.5"></circle>
+    <circle r="40" fill="none" stroke="#F1EFE8" stroke-width="0.5"></circle>
+    <circle r="20" fill="none" stroke="#F1EFE8" stroke-width="0.5"></circle>
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#F1EFE8" stroke-width="0.5"></line>
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="#F1EFE8" stroke-width="0.5"></line>
+  </g>
+</svg>

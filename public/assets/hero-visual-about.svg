@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 680" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="hvbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#114A13"></stop>
+      <stop offset="100%" stop-color="#0A3A0C"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="540" height="680" fill="url(#hvbg)"></rect>
+  
+  <g stroke="#C5E85C" stroke-width="0.4" opacity="0.16" fill="none">
+    <path d="M 0 100 Q 140 80 270 100 T 540 90"></path>
+    <path d="M 0 150 Q 140 130 270 150 T 540 145"></path>
+    <path d="M 0 200 Q 140 180 270 200 T 540 200"></path>
+    <path d="M 0 250 Q 140 235 270 252 T 540 250"></path>
+    <path d="M 0 300 Q 140 290 270 305 T 540 305"></path>
+    <path d="M 0 350 Q 140 345 270 358 T 540 360"></path>
+    <path d="M 0 400 Q 140 400 270 410 T 540 415"></path>
+    <path d="M 0 450 Q 140 455 270 460 T 540 470"></path>
+    <path d="M 0 500 Q 140 510 270 510 T 540 525"></path>
+    <path d="M 0 550 Q 140 565 270 560 T 540 580"></path>
+    <path d="M 0 600 Q 140 620 270 610 T 540 635"></path>
+  </g>
+  
+  <g transform="translate(270 340)" stroke="#C5E85C" stroke-width="0.5" fill="none" opacity="0.5">
+    <circle r="220"></circle>
+    <circle r="160"></circle>
+    <circle r="100"></circle>
+    <circle r="40" stroke-width="0.7"></circle>
+    <line x1="-260" y1="0" x2="260" y2="0"></line>
+    <line x1="0" y1="-260" x2="0" y2="260"></line>
+    <line x1="-184" y1="-184" x2="184" y2="184" stroke-width="0.3"></line>
+    <line x1="-184" y1="184" x2="184" y2="-184" stroke-width="0.3"></line>
+    
+    <path d="M 0 -240 L 12 -8 L 0 0 Z" fill="#C5E85C" opacity="0.35"></path>
+    <path d="M 0 240 L -12 8 L 0 0 Z" fill="#C5E85C" opacity="0.25"></path>
+    <path d="M -240 0 L -8 -12 L 0 0 Z" fill="#C5E85C" opacity="0.25"></path>
+    <path d="M 240 0 L 8 12 L 0 0 Z" fill="#C5E85C" opacity="0.25"></path>
+  </g>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#C5E85C" opacity="0.7" text-anchor="middle">
+    <text x="270" y="92">N</text>
+    <text x="270" y="600">S</text>
+    <text x="42" y="345">W</text>
+    <text x="498" y="345">E</text>
+  </g>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#8AA87E">
+    <text x="32" y="40">— FIG. ABT-01 · COMPASS</text>
+    <text x="508" y="40" text-anchor="end">SAFAR · JOURNEY</text>
+    <text x="32" y="660">42°21′N · 71°03′W · BOSTON</text>
+    <text x="508" y="660" text-anchor="end">EST. 2023</text>
+  </g>
+  
+  <g font-family="JetBrains Mono, monospace" font-size="8" fill="#8AA87E" opacity="0.5">
+    <text x="525" y="155" text-anchor="end">— 1200</text>
+    <text x="525" y="305" text-anchor="end">— 900</text>
+    <text x="525" y="455" text-anchor="end">— 600</text>
+    <text x="525" y="595" text-anchor="end">— 300</text>
+  </g>
+</svg>
