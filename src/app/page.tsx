@@ -10,7 +10,6 @@ import TherapeuticAreas from '@/components/home/TherapeuticAreas'
 import Audiences from '@/components/home/Audiences'
 import Testimonials from '@/components/home/Testimonials'
 import PullQuote from '@/components/home/PullQuote'
-import PressSection from '@/components/home/PressSection'
 import FAQSection from '@/components/home/FAQSection'
 import CtaBand from '@/components/CtaBand'
 
@@ -28,7 +27,6 @@ export default function HomePage() {
       <Audiences />
       <Testimonials />
       <PullQuote />
-      <PressSection />
       <FAQSection />
       <CtaBand />
     </PageShell>

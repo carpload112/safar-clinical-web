@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const cards = [
-  { tag:'— FOR SPONSORS', title:'Enrollment without mailers.', body:'See cohort feasibility before the protocol is locked. Get qualified matches in the first 72 hours, not the first 11 months.', img:'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=70', href:'/for-sponsors', link:'For pharma & biotech sponsors' },
-  { tag:'— FOR CROS', title:'A straighter path to LPI.', body:'Bring a reading of the EHR to every site you operate. Fewer dropped screen failures, cleaner pipelines, auditable routing.', img:'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1200&q=70', href:'/for-sponsors', link:'For contract research orgs' },
-  { tag:'— FOR SITES', title:'Matches in the chart.', body:'No new dashboard. A single row inside the record the clinician already has open — accept, defer, decline.', img:'https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=70', href:'/for-sites', link:'For hospitals & research sites' },
+  { tag:'— FOR SPONSORS', title:'Feasibility and patient recruitment, end-to-end.', body:'Site feasibility, protocol feasibility, and the patient recruitment to deliver against them — all from one reading of the record. Answers before the protocol locks; enrollment that follows.', img:'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=70', href:'/for-sponsors', link:'For pharma & biotech sponsors' },
+  { tag:'— FOR SITES', title:'EHR meets EDC.', body:'An interoperability layer between the chart the clinician writes in and the trial system that captures it. Patient recruitment that lives where the work already happens.', img:'https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=70', href:'/for-sites', link:'For hospitals & research sites' },
+  { tag:'— FOR PHYSICIANS', title:'From referrer to active site.', body:'Clinical trials become a value stream for the practice — the shortest path from one-off referral to running studies as an active investigator.', img:'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=70', href:'/for-physicians', link:'For practicing physicians' },
 ]
 
 export default function Audiences() {

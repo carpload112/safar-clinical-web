@@ -10,14 +10,11 @@ export default function CtaBand() {
         <div>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--brand)' }}>— A CALL, NOT A DEMO</span>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 400, letterSpacing: '-0.045em', lineHeight: 0.92, fontSize: 'clamp(52px,6.5vw,96px)', margin: '20px 0 0', color: 'var(--forest)' }}>
-            Thirty minutes.<br/><span style={{ fontStyle: 'italic', color: 'var(--brand)' }}>One protocol.<br/>A real match list.</span>
+            Let&apos;s <span style={{ fontStyle: 'italic', color: 'var(--brand)' }}>talk.</span>
           </h2>
         </div>
         <div style={{ paddingBottom: 8 }}>
-          <p style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--forest)', maxWidth: '36ch' }}>
-            Send a recent protocol under NDA. We&apos;ll return a cohort sketch — with real match counts, drawn from de-identified records — before the follow-up.
-          </p>
-          <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'flex-start' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'flex-start' }}>
             <button onClick={openCta} style={{ background: 'none', border: 0, padding: 0, fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 24, letterSpacing: '-0.02em', color: 'var(--forest)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: 6, textDecorationThickness: '0.5px' }}>Request a walkthrough →</button>
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--fg-3)' }}>— OR EMAIL HELLO@SAFAR.CLINICAL</span>
           </div>

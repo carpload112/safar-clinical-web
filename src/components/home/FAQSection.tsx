@@ -1,13 +1,29 @@
 'use client'
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 
-const items = [
+const labelStyle: React.CSSProperties = { fontFamily:'var(--font-display)', fontStyle:'italic', fontSize:16, color:'var(--brand)' }
+
+const items: [string, ReactNode][] = [
   ['Does Safar handle PHI?', 'Yes, under a BAA in every deployment. Data is processed inside the health system boundary where possible; no PHI leaves a signed environment. HIPAA, SOC 2 Type II, 21 CFR Part 11, HITRUST.'],
   ['Which EHRs are supported?', 'Epic, Cerner (Oracle Health), athenahealth, MEDITECH, and any FHIR R4 endpoint. Typical integration is two weeks with IT; no custom builds per protocol.'],
   ['How is a match scored?', 'We parse the protocol into structured criteria, then evaluate each patient against inclusion, exclusion, prior therapy, labs, and longitudinal signals. The score is explainable: every match comes with the criteria it hit and the evidence it was drawn from.'],
   ['What about consent?', 'Matches surface to the treating clinician inside their chart. Outreach and consent follow the site\'s existing, IRB‑approved workflow. Safar does not contact patients.'],
-  ['What does it cost?', 'Per‑study, with pricing tied to enrollment delivered — not clicks, not contacts. We\'ll send a sample contract after an intro call.'],
-  ['Who\'s behind it?', 'Founders from oncology trials, hospital CIO offices, and clinical NLP. Backed by Section 32, Founders Fund, and a group of sponsor CMOs.'],
+  ['Why partner with Safar?', (
+    <>
+      <div style={{ marginBottom:12 }}>
+        <span style={labelStyle}>Comprehensive.</span> Not just a matching algorithm — an end‑to‑end patient management platform.
+      </div>
+      <div style={{ marginBottom:12 }}>
+        <span style={labelStyle}>No stress.</span> We handle implementation, and our easy‑to‑use solutions are tailored to every step of your process.
+      </div>
+      <div style={{ marginBottom:12 }}>
+        <span style={labelStyle}>Enrollment.</span> We work tirelessly to bolster your enrollment efforts — ROI means everything to us.
+      </div>
+      <div>
+        <span style={labelStyle}>Differentiation.</span> Our comprehensive solution set enhances operations for physicians, sponsors, and sites. We absorb the friction so you can focus on the research.
+      </div>
+    </>
+  )],
 ]
 
 export default function FAQSection() {
