@@ -3,29 +3,13 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useOpenCta } from './CtaContext'
 
-type MenuKey = 'Method' | 'Studies' | 'For sponsors' | 'For sites'
+type MenuKey = 'Studies' | 'For sponsors' | 'For sites'
 
 const menus: Record<MenuKey, {
   tag: string
   cols: [string, [string, string, string][]][]
   feature: { eyebrow: string; title: string; link: string; href: string }
 }> = {
-  'Method': {
-    tag: '— HOW IT WORKS',
-    cols: [
-      ['Reading the record', [
-        ['The Matcher', 'Live engine · 37.2% match rate', '/method'],
-        ['Protocol parser', 'Criteria → structured query', '/method'],
-        ['Routing to chart', 'In\u2011workflow decisions', '/method'],
-      ]],
-      ['Deep dives', [
-        ['Security & compliance', 'HIPAA, SOC 2, Part 11', '/security'],
-        ['Evidence & explainability', 'Every score, sourced', '/method'],
-        ['Sample match report', 'A real output, redacted', '/method'],
-      ]],
-    ],
-    feature: { eyebrow: '— DISPATCH VOL. 03', title: 'Enrollment as a routing problem, not a marketing problem.', link: 'Read the letter →', href: '/dispatch' }
-  },
   'Studies': {
     tag: '— ACTIVE & ROUTED',
     cols: [
@@ -151,7 +135,8 @@ export default function Nav() {
 
           {/* Desktop nav */}
           <div className="nav-desktop" style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-            {(['Method','For sponsors','For sites'] as MenuKey[]).map(key => (
+            <Link href="/method" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>Method</Link>
+            {(['For sponsors','For sites'] as MenuKey[]).map(key => (
               <div
                 key={key}
                 onMouseEnter={() => handleEnter(key)}
@@ -187,7 +172,6 @@ export default function Nav() {
                 Studies
               </button>
             </div>
-            <Link href="/security" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>Security</Link>
             <Link href="/dispatch" className="nav-link-underline" style={{ fontSize: 13, color: 'var(--forest)' }}>Dispatch</Link>
           </div>
 
@@ -310,7 +294,6 @@ export default function Nav() {
               { label: 'For sites', href: '/for-sites' },
               { label: 'For physicians', href: '/for-physicians' },
               { label: 'Studies', href: '/studies' },
-              { label: 'Security', href: '/security' },
               { label: 'Dispatch', href: '/dispatch' },
             ].map(item => (
               <Link

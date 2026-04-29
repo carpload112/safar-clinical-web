@@ -1,10 +1,8 @@
 import Link from 'next/link'
 
 const cols = [
-  ['Product', [['Method','/method'],['Studies','/studies'],['Integrations','/method'],['Security','/security'],['Changelog','/dispatch']]],
-  ['For', [['Sponsors','/for-sponsors'],['CROs','/for-sponsors'],['Sites','/for-sites'],['Hospitals','/for-sites'],['Investigators','/for-sites']]],
-  ['Company', [['About','/about'],['Press','/about'],['Careers — 7','/about'],['Contact','/about'],['Advisors','/about']]],
-  ['Resources', [['Sample report','/method'],['Whitepaper','/dispatch'],['API docs','/method'],['Status','#'],['Brand','#']]],
+  ['Product', [['Method','/method']]],
+  ['For', [['Sponsors','/for-sponsors'],['Sites','/for-sites'],['Physicians','/for-physicians']]],
 ] as const
 
 export default function Footer() {
@@ -33,7 +31,7 @@ export default function Footer() {
           <div style={{ marginTop: 10, fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.14em', color: 'var(--sage-soft)' }}>· NO SPAM · UNSUBSCRIBE ANY TIME</div>
         </div>
       </div>
-      <div style={{ position: 'relative', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 32, paddingTop: 56 }}>
+      <div style={{ position: 'relative', display: 'flex', gap: 80, paddingTop: 56, flexWrap: 'wrap' }}>
         {cols.map(([title, items]) => (
           <div key={title}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--lime)', marginBottom: 18 }}>— {title}</div>
@@ -45,7 +43,6 @@ export default function Footer() {
       </div>
       <div style={{ position: 'relative', marginTop: 64, paddingTop: 24, borderTop: '0.5px solid rgba(241,239,232,0.14)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, flexWrap: 'wrap', fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', color: 'var(--sage-soft)' }}>
         <span>— SAFAR CLINICAL, INC · 2026</span>
-        <span>· NEW YORK · BOSTON · LONDON</span>
         <span>PRIVACY · TERMS · BAA · DISCLOSURE</span>
       </div>
     </footer>
