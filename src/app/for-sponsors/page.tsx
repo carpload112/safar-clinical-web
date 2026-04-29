@@ -30,8 +30,23 @@ export default function ForSponsorsPage() {
           <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--brand)' }}>— FOUR PRIMARY USE CASES</span>
           <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--fg-3)' }}>DEPLOYED WITH 3 OF THE TOP‑10</span>
         </div>
+        <style>{`
+          @media (max-width: 860px) {
+            .fsp-usecase { grid-template-columns: 1fr !important; gap: 14px !important; padding: 32px 0 !important; }
+            .fsp-proof { grid-template-columns: 1fr 1fr !important; gap: 0 !important; }
+            .fsp-proof > div:nth-child(odd) { border-left: none !important; padding-left: 0 !important; }
+            .fsp-proof > div:nth-child(even) { border-left: 0.5px solid rgba(241,239,232,0.14) !important; padding-left: 28px !important; }
+            .fsp-proof > div:nth-child(-n+2) { padding-bottom: 32px !important; border-bottom: 0.5px solid rgba(241,239,232,0.14) !important; }
+            .fsp-proof > div:nth-child(n+3) { padding-top: 32px !important; }
+            .fsp-case-grid { grid-template-columns: 1fr !important; gap: 56px !important; }
+            .fsp-case-stats { grid-template-columns: 1fr 1fr 1fr !important; gap: 18px !important; }
+          }
+          @media (max-width: 480px) {
+            .fsp-case-stats { grid-template-columns: 1fr !important; gap: 18px !important; }
+          }
+        `}</style>
         {useCases.map(([tag,title,body],i) => (
-          <div key={i} style={{ display:'grid', gridTemplateColumns:'180px 1.1fr 1.6fr', gap:32, padding:'40px 0', borderBottom:'0.5px solid var(--border)', alignItems:'start' }}>
+          <div key={i} className="fsp-usecase" style={{ display:'grid', gridTemplateColumns:'180px 1.1fr 1.6fr', gap:32, padding:'40px 0', borderBottom:'0.5px solid var(--border)', alignItems:'start' }}>
             <span style={{ fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.14em', color:'var(--brand)' }}>— {tag}</span>
             <div style={{ fontFamily:'var(--font-display)', fontSize:32, letterSpacing:'-0.03em', lineHeight:1.02, color:'var(--forest)' }}>
               {title.split(' ').slice(0,-1).join(' ')}{' '}<span style={{ fontStyle:'italic', color:'var(--brand)' }}>{title.split(' ').slice(-1)}</span>
@@ -46,7 +61,7 @@ export default function ForSponsorsPage() {
         <h2 style={{ fontFamily:'var(--font-display)', fontWeight:400, letterSpacing:'-0.04em', lineHeight:0.98, fontSize:'clamp(52px,6vw,88px)', margin:'20px 0 56px', color:'var(--cream)', maxWidth:'16ch' }}>
           Four numbers. <span style={{ fontStyle:'italic', color:'var(--lime)' }}>Audited by sponsors.</span>
         </h2>
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:0 }}>
+        <div className="fsp-proof" style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:0 }}>
           {proof.map(([k,v,sub],i) => (
             <div key={i} style={{ padding:'28px 28px 28px 0', paddingLeft: i===0 ? 0 : 28, borderLeft: i===0 ? 'none' : '0.5px solid rgba(241,239,232,0.14)' }}>
               <div style={{ fontFamily:'var(--font-display)', fontWeight:400, fontSize:'clamp(60px,7vw,84px)', letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--lime)' }}>{k}</div>
@@ -58,7 +73,7 @@ export default function ForSponsorsPage() {
       </section>
 
       <section style={{ padding:'96px 32px', borderBottom:'0.5px solid var(--border)' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:80, alignItems:'start' }}>
+        <div className="fsp-case-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:80, alignItems:'start' }}>
           <div>
             <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--fg-3)' }}>— CASE · PHASE II AML RESCUE</span>
             <div style={{ marginTop:20, fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.12em', color:'var(--brand)' }}>SPONSOR · TOP‑10 PHARMA · CONFIDENTIAL</div>
@@ -84,7 +99,7 @@ export default function ForSponsorsPage() {
             <p style={{ marginTop:28, fontSize:15, lineHeight:1.7, color:'var(--fg-2)' }}>
               Phase II, FLT3‑ITD+ AML. Enrollment stalled at 14% of plan after nine months. Safar deployed across eight existing sites; no new sites added. In the first eight weeks after go‑live, 106 evidence‑backed matches surfaced. Screen‑to‑enroll held at 72%. LPI landed forty‑one weeks ahead of the revised projection — saving the program.
             </p>
-            <div style={{ marginTop:32, padding:'24px 0', borderTop:'0.5px solid var(--border)', borderBottom:'0.5px solid var(--border)', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:24 }}>
+            <div className="fsp-case-stats" style={{ marginTop:32, padding:'24px 0', borderTop:'0.5px solid var(--border)', borderBottom:'0.5px solid var(--border)', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:24 }}>
               {[['106','Matches surfaced · 8 wks'],['72%','Screen‑to‑enroll'],['41 wks','LPI acceleration']].map(([k,v],i) => (
                 <div key={i}>
                   <div style={{ fontFamily:'var(--font-display)', fontSize:36, letterSpacing:'-0.03em', color:'var(--forest)' }}>{k}</div>

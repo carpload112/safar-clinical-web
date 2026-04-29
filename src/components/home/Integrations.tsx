@@ -13,7 +13,7 @@ export default function Integrations() {
   return (
     <>
       <style>{`.int-row:hover { background: var(--surface-2); }`}</style>
-      <section className="int-pad" style={{ padding: '88px 32px', borderBottom: '0.5px solid var(--border)', background: 'var(--surface)' }}>
+      <section className="int-pad" style={{ padding: '80px 32px', borderBottom: '0.5px solid var(--border)', background: 'var(--surface)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', paddingBottom: 28, borderBottom: '0.5px solid var(--border)', gap: 12, flexWrap: 'wrap' }}>
           <span className="sf-eyebrow" style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--brand)' }}>— INTEGRATIONS · READS THE RECORD IN PLACE</span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--fg-3)' }}>8 OF 8 LIVE</span>

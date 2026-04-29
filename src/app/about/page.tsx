@@ -126,7 +126,7 @@ export default function AboutPage() {
               Sponsors write protocols. Sites estimate eligible patient counts from memory. Coordinators comb charts by hand. Patients hear about trials from ads, not their own doctor. Nobody owns the routing — and nobody audits the gap. We built Safar to sit there.
             </p>
             <div style={{ marginTop: 36, display: 'flex', gap: 24, alignItems: 'baseline', flexWrap: 'wrap' }}>
-              <a href="#cta" className="sf-link" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.16em', color: 'var(--brand)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: 4 }}>
+              <a href="mailto:hello@safar.clinical?subject=Walkthrough%20request" className="sf-link" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.16em', color: 'var(--brand)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: 4 }}>
                 REQUEST A WALKTHROUGH →
               </a>
               <a href="/method" className="sf-link" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.16em', color: 'var(--fg-3)', textDecoration: 'underline', textUnderlineOffset: 4 }}>
@@ -247,7 +247,7 @@ export default function AboutPage() {
       <section className="sf-section" style={{ padding: '80px 32px', borderBottom: '0.5px solid var(--border)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', paddingBottom: 16, marginBottom: 40, borderBottom: '0.5px solid var(--border)', gap: 12, flexWrap: 'wrap' }}>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', color: 'var(--fg-3)' }}>— TEAM · CLINICAL · ENGINEERING · REGULATORY</span>
-          <a href="#" style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', color: 'var(--brand)', textDecoration: 'underline', textUnderlineOffset: 3 }}>OPEN ROLES — 7 ↗</a>
+          <a href="mailto:careers@safar.clinical?subject=Open%20roles" style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', color: 'var(--brand)', textDecoration: 'underline', textUnderlineOffset: 3 }}>OPEN ROLES — 7 ↗</a>
         </div>
         <h2
           className="sf-h2"

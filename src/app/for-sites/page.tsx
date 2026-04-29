@@ -30,8 +30,23 @@ export default function ForSitesPage() {
         <h2 style={{ fontFamily:'var(--font-display)', fontWeight:400, letterSpacing:'-0.04em', lineHeight:0.98, fontSize:'clamp(48px,5.5vw,80px)', margin:'20px 0 56px', color:'var(--forest)', maxWidth:'22ch' }}>
           We are a <span style={{ fontStyle:'italic', color:'var(--brand)' }}>reader.</span> Not a recruiter.
         </h2>
+        <style>{`
+          @media (max-width: 860px) {
+            .fs-promise-row { grid-template-columns: 1fr !important; gap: 12px !important; padding: 24px 0 !important; }
+            .fs-stage-grid { grid-template-columns: 1fr 1fr !important; }
+            .fs-stage-grid > div:nth-child(odd) { border-left: none !important; padding-left: 0 !important; }
+            .fs-stage-grid > div:nth-child(even) { border-left: 0.5px solid var(--border) !important; padding-left: 24px !important; }
+            .fs-stage-grid > div:nth-child(-n+2) { border-bottom: 0.5px solid var(--border) !important; padding-bottom: 32px !important; }
+            .fs-stage-grid > div:nth-child(n+3) { padding-top: 32px !important; }
+          }
+          @media (max-width: 480px) {
+            .fs-stage-grid { grid-template-columns: 1fr !important; }
+            .fs-stage-grid > div { border-left: none !important; padding-left: 0 !important; padding: 24px 0 !important; border-top: 0.5px solid var(--border); border-bottom: none !important; }
+            .fs-stage-grid > div:first-child { border-top: none !important; padding-top: 0 !important; }
+          }
+        `}</style>
         {promises.map(([t,b],i) => (
-          <div key={i} style={{ display:'grid', gridTemplateColumns:'80px 1fr 2fr', gap:32, padding:'32px 0', borderTop:'0.5px solid var(--border)', alignItems:'start' }}>
+          <div key={i} className="fs-promise-row" style={{ display:'grid', gridTemplateColumns:'80px 1fr 2fr', gap:32, padding:'32px 0', borderTop:'0.5px solid var(--border)', alignItems:'start' }}>
             <span style={{ fontFamily:'var(--font-mono)', fontSize:11, letterSpacing:'0.14em', color:'var(--brand)' }}>— 0{i+1}</span>
             <div style={{ fontFamily:'var(--font-display)', fontSize:26, letterSpacing:'-0.03em', lineHeight:1.05, color:'var(--forest)' }}>{t}</div>
             <p style={{ fontSize:14.5, lineHeight:1.65, color:'var(--fg-2)' }}>{b}</p>
@@ -44,7 +59,7 @@ export default function ForSitesPage() {
           <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--brand)' }}>— WHERE SAFAR LIVES · THE PATH OF A MATCH</span>
           <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.16em', color:'var(--fg-3)' }}>FOUR TOUCHPOINTS · ZERO NEW UI</span>
         </div>
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:0 }}>
+        <div className="fs-stage-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:0 }}>
           {workflow.map(([k,v],i) => (
             <div key={i} style={{ padding:'40px 24px 40px 0', paddingLeft: i===0 ? 0 : 24, borderLeft: i===0 ? 'none' : '0.5px solid var(--border)' }}>
               <span style={{ fontFamily:'var(--font-mono)', fontSize:10, letterSpacing:'0.14em', color:'var(--brand)' }}>— STAGE 0{i+1}</span>

@@ -18,7 +18,7 @@ export default function TherapeuticAreas() {
     <section
       className="sf-section ta-pad"
       style={{
-        padding: '96px 32px',
+        padding: '80px 32px',
         borderBottom: '0.5px solid var(--border)',
         background: 'var(--surface)',
       }}
@@ -32,13 +32,11 @@ export default function TherapeuticAreas() {
           .ta-grid > .ta-cell { border-bottom: 0.5px solid var(--border) !important; }
           .ta-grid > .ta-cell:nth-last-child(-n+3) { border-bottom: none !important; }
         }
-        @media (max-width: 760px) {
+        @media (max-width: 640px) {
           .ta-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .ta-grid > .ta-cell { border-right: none !important; border-bottom: 0.5px solid var(--border) !important; padding: 22px 16px !important; min-height: 120px !important; }
+          .ta-grid > .ta-cell { border-right: none !important; border-bottom: 0.5px solid var(--border) !important; padding: 20px 14px !important; min-height: 110px !important; }
           .ta-grid > .ta-cell:nth-child(odd) { border-right: 0.5px solid var(--border) !important; }
           .ta-grid > .ta-cell:nth-last-child(-n+2) { border-bottom: none !important; }
-        }
-        @media (max-width: 640px) {
           .ta-head .sf-h2 { font-size: 32px !important; }
           .ta-grid > .ta-cell > div > div:first-child { font-size: 16px !important; }
         }
@@ -81,6 +79,7 @@ export default function TherapeuticAreas() {
         {areas.map((a, i) => (
           <a
             key={a[0]}
+            href="/studies"
             className="ta-cell"
             style={{
               padding: '28px 24px',

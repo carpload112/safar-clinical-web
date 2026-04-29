@@ -19,7 +19,7 @@ export default function Testimonials() {
       className="sf-section ts-pad"
       data-theme="dark"
       style={{
-        padding: '96px 32px',
+        padding: '80px 32px',
         background: 'var(--forest)',
         color: 'var(--cream)',
         borderBottom: '0.5px solid rgba(241,239,232,0.08)',

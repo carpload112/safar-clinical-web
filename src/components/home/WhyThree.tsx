@@ -21,7 +21,7 @@ const pillars = [
 
 export default function WhyThree() {
   return (
-    <section className="sf-section wt-pad" style={{ padding: '96px 32px', borderBottom: '0.5px solid var(--border)' }}>
+    <section className="sf-section wt-pad" style={{ padding: '80px 32px', borderBottom: '0.5px solid var(--border)' }}>
       <style>{`
         @media (max-width: 860px) {
           .wt-grid { grid-template-columns: 1fr !important; }

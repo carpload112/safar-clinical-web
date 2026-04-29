@@ -20,15 +20,24 @@ export default function Hero() {
         .hero-h1 { animation: heroFadeUp 600ms cubic-bezier(.2,.6,.2,1) 80ms both; }
         .hero-aside { animation: heroFadeUp 600ms cubic-bezier(.2,.6,.2,1) 160ms both; }
         .hero-stats { animation: heroFadeUp 600ms cubic-bezier(.2,.6,.2,1) 240ms both; }
+        @media (prefers-reduced-motion: reduce) {
+          .hero-meta, .hero-h1, .hero-aside, .hero-stats { animation: none !important; }
+          .hero-compass { animation: none !important; }
+        }
         @media(max-width:860px) {
-          .hero-grid { grid-template-columns: 1fr !important; }
+          .hero-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
           .hero-h1 { font-size: clamp(40px,10vw,72px) !important; }
+          .hero-portraits { width: 86% !important; margin-left: 0 !important; justify-self: center !important; }
+        }
+        @media(max-width:480px) {
+          .hero-portraits { width: 100% !important; gap: 12px !important; }
         }
       `}</style>
       <img
         src="/assets/compass-rose.svg"
         alt=""
         aria-hidden
+        className="hero-compass"
         style={{
           position: 'absolute', right: -160, top: -100,
           width: 680, height: 680, opacity: 0.055, pointerEvents: 'none',
